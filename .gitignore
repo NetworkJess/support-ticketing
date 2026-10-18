@@ -1,0 +1,24 @@
+# ============================================================
+# .gitignore  —  files that should NOT go on GitHub
+# ============================================================
+
+# MySQL data — the live database. Created at runtime by Docker;
+# never commit it (contains passwords + private keys).
+mysql_data/
+
+# Ori coding-agent session data (chat history etc.)
+.ori/
+
+# The assignment brief + written report are pushed to the repo (the
+# assignment requires the write-up alongside the code).
+
+# Keep the old markdown source, the LibreOffice backup, and the
+# open-document lock file private.
+docs/report.md
+docs/report.docx.libreoffice-backup
+docs/.~lock.report.docx#
+
+# Local database credential overrides (if you create a .env file)
+.env
+# Pristine submission copy — keep private (contains name/ID)
+docs/report copy.docx
